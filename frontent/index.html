@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Add Slick Carousel CDN -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+<body class="purple-theme">
+
+  <!-- 🌐 Navbar -->
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container-fluid">
+
+      <!-- 🔵 Logo -->
+      <a class="navbar-brand fw-bold text-white" href="#">
+        <img src="images/logo1.png" alt="Logo" class="logo" />
+      </a>
+
+      <!-- 🍔 Hamburger (mobile) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- 🧭 Nav Items & Toggle -->
+      <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
+        
+        <!-- 🟪 Center Nav Items -->
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-4">
+          <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#internships">Internships</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- 🌙 Theme Toggle -->
+        <button id="themeToggle" class="btn btn-light btn-sm">
+          <i class="bi bi-moon-fill" id="themeIcon"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <section class="intro-section d-flex align-items-center" >
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left: Image -->
+        <div class="col-md-5 text-center">
+            <img src="images/image.jpg" alt="Jaishree R" class="img-fluid profile-pic animate__animated animate__zoomIn">
+        </div>    
+        <!-- Right: Text -->
+        <div class="col-md-7 text-light">
+            <h1 class="typewriter" id="typeText">
+                I'm <span class="name-highlight">Jaishree R</span>
+              </h1>              
+            <!-- Role Titles with Icons -->
+<p class="role fade-in delay-1"><i class="fas fa-robot me-2 text-warning"></i>AI & ML Explorer</p>
+<p class="role fade-in delay-2"><i class="fas fa-brain me-2 text-info"></i>NLP & CVIP Enthusiast</p>
+<p class="role fade-in delay-3"><i class="fas fa-laptop-code me-2 text-success"></i>Fullstack Developer</p>
+
+          </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="about" class="about-section py-5" style="background: linear-gradient(135deg, #5A189A, #240046); color: white;">
+   
+    <div class="container">
+<!-- About Me Heading & Lines -->
+<div class="text-center mb-5 position-relative about-me-box p-4">
+    <h2 class="section-title display-5 fw-bold">
+      About <span class="highlight" style="color: #FFB703;">Me</span>
+    </h2>
+    <p class="fs-5 mt-3"><i class="fas fa-user-graduate me-2 text-warning"></i>A Computer Science student with a passion for solving real-world problems through technology.</p>
+    <p class="fs-5"><i class="fas fa-code me-2 text-info"></i>I combine logical thinking, creative design, and clean coding practices to build smart solutions.</p>
+    <p class="fs-5"><i class="fas fa-rocket me-2 text-danger"></i>Continuously exploring new tools and technologies to grow as a full-stack developer.</p>
+    
+  
+    <!-- Aesthetic bottom quote -->
+    <div class="mt-4 fst-italic" style="color: #FFB703;">
+      “Not just a developer, a creator in progress...”
+    </div>
+  </div>
+  
+  
+      <!-- Tabs: Education | Experience | Skills -->
+    <!-- Tabs Navigation -->
+<ul class="nav nav-tabs custom-tabs justify-content-center" id="aboutTabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-bs-toggle="tab" href="#education">Education</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-bs-toggle="tab" href="#experience">Experience</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-bs-toggle="tab" href="#skills">Skills</a>
+  </li>
+</ul>
+  
+      <div class="tab-content mt-8">
+         <!-- Education Tab -->
+  <div class="tab-pane fade show active" id="education">
+    <div class="row justify-content-center gap-4">
+      <!-- School Card -->
+      <div class="col-md-5 bounce-in-up">
+        <div class="edu-card text-center p-4 h-100">
+          <img src="images/school.jpeg" alt="School" class="edu-img mb-3">
+          <h5>🏫 St.Paul’s Matric Hr.Sec School, Kovilpatti</h5>
+          <p>📄 SSLC (2019 - 2020): <strong>92%</strong></p>
+          <p>📚 HSC (2021 - 2022): <strong>89.3%</strong></p>
+        </div>
+      </div>
+
+      <!-- College Card -->
+      <div class="col-md-5 bounce-in-up">
+        <div class="edu-card text-center p-4 h-100">
+          <img src="images/nec.jpg" alt="College" class="edu-img mb-3">
+          <h5>🎓 National Engineering College, Kovilpatti</h5>
+          <p>📘 BE CSE (2022 – 2026)</p>
+          <p>📊 CGPA: <strong>8.75</strong> (Upto 5th Sem)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+      
+  <div class="tab-pane fade" id="experience">
+    <div class="d-flex justify-content-center align-items-center" style="min-height: 300px;">
+      <div class="exp-box p-4 text-center">
+        <p><i class="fas fa-hands-helping me-2 text-warning"></i><strong>Volunteer Organizer</strong> - College Symposium</p>
+        <p><i class="fas fa-medal me-2 text-info"></i><strong>NCC Cadet</strong> - Completed B Certificate</p>
+        <p><i class="fas fa-user-shield me-2 text-primary"></i>Currently serving as &nbsp;<strong>3rd year NCC Cadet</strong></p>
+        <p><i class="fas fa-users me-2 text-success"></i>Member of &nbsp;<strong>IEEE</strong> &nbsp;& &nbsp;<strong>CSI</strong>&nbsp; Clubs</p>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="skills">
+    <div class="text-center mb-4">
+      <h4 class="mb-4">Tech <span style="color:#FFB703;">Skills</span></h4>
+  
+      <!-- Row 1 -->
+      <div class="d-flex flex-wrap justify-content-center gap-4 mb-4">
+        <div class="skill-icon text-center">
+          <img src="images/html.png" alt="HTML">
+          <div>HTML</div>
+        </div>
+        <div class="skill-icon text-center">
+          <img src="images/css.png" alt="CSS">
+          <div>CSS</div>
+        </div>
+        <div class="skill-icon text-center">
+          <img src="images/js.png" alt="JS">
+          <div>JS</div>
+        </div>
+        <div class="skill-icon text-center">
+          <img src="images/bootstrap.jpeg" alt="Bootstrap">
+          <div>Bootstrap</div>
+        </div>
+        <div class="skill-icon text-center">
+          <img src="images/angular.jpeg" alt="Angular">
+          <div>Angular</div>
+        </div>
+        <div class="skill-icon text-center">
+          <img src="images/python.jpeg" alt="Python">
+          <div>Python</div>
+        </div>
+        <div class="skill-icon text-center">
+          <img src="images/java.png" alt="Java">
+          <div>Java</div>
+        </div>
+        <div class="skill-icon text-center">
+          <img src="images/C.png" alt="C">
+          <div>C</div>
+        </div>
+      </div>
+  
+      <!-- Row 2 -->
+      <div class="d-flex flex-wrap justify-content-center gap-4">
+        <div class="skill-icon text-center">
+          <img src="images/c++.jpeg" alt="C++">
+          <div>C++</div>
+        </div>
+        <div class="skill-icon text-center">
+          <img src="images/php.png" alt="PHP">
+          <div>PHP</div>
+        </div>
+        <div class="skill-icon text-center">
+          <img src="images/jsp.jpeg" alt="JSP">
+          <div>JSP</div>
+        </div>
+        <div class="skill-icon text-center">
+          <img src="images/servlet.png" alt="Servlet">
+          <div>Servlet</div>
+        </div>
+        <div class="skill-icon text-center">
+          <img src="images/mysql.png" alt="MySQL">
+          <div>MySQL</div>
+        </div>
+        <div class="skill-icon text-center">
+          <img src="images/github.png" alt="GitHub">
+          <div>GitHub</div>
+        </div>
+        <div class="skill-icon text-center">
+          <img src="images/vscode.jpeg" alt="VS Code">
+          <div>VS Code</div>
+        </div>
+        <div class="skill-icon text-center">
+          <img src="images/canva.jpeg" alt="Canva">
+          <div>Canva</div>
+        </div>
+      </div>
+    </div>
+  </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="internships">
+    <h2 class="section-title">My <span>Internships</span></h2>
+    <div class="internship-container">
+  
+    <!-- Internship 2 -->
+<div class="internship-card">
+  <span class="status completed">✅ Completed</span>
+  <h3>WebStack Academy</h3>
+  <p>Successfully completed a Full Stack Web Development Internship using MERN Stack. Hands-on with HTML, CSS, JavaScript, React, and SDLC-based project building.</p>
+  <a href="https://youtu.be/ULEmq5E-H3Q?si=oGTDSJTzXHewWaSi" 
+  target="_blank" 
+  style="display:inline-block; padding:10px 20px; background:linear-gradient(135deg, #ff512f, #dd2476); color:white; font-weight:600; text-decoration:none; border-radius:30px; box-shadow:0 4px 15px rgba(221, 36, 118, 0.4); transition:all 0.3s ease-in-out; font-size:1rem;">
+  🎥 Watch Demo
+</a>
+<br>
+<br>
+<br>
+<a href="images/mern.jpeg" 
+  target="_blank" 
+  style="display:inline-block; padding:10px 20px; background:linear-gradient(135deg, #7b2ff7, #f107a3); color:white; font-weight:600; text-decoration:none; border-radius:30px; box-shadow:0 4px 15px rgba(123, 47, 247, 0.4); transition:all 0.3s ease-in-out; font-size:1rem; margin-left:10px;">
+  📄 View Certificate
+</a>
+
+</div>
+
+
+  
+    <!-- Internship 2 -->
+<div class="internship-card">
+  <span class="status completed">✅ Completed</span>
+  <h3>CDAC - Cyber Security</h3>
+  <p>Completed a cybersecurity internship at CDAC, Noida under the Ministry of Electronics and IT. Worked on a project titled <strong>"Evaluating New Tools and Techniques in the Cyber Kill Chain"</strong>. Gained hands-on experience with tools like Maltego, Recon-ng, MSFvenom, SET, and Metasploit.</p>
+  <p>Also explored tools like Google Dorks, Sparta, DNSenum, Amass, and Nessus through lab sessions. Mentored by <strong>Varun Mishra</strong> sir for research and testing phases.</p>
+ 
+<a href="images/cdac.jpeg" 
+target="_blank" 
+style="display:inline-block; padding:10px 20px; background:linear-gradient(135deg, #7b2ff7, #f107a3); color:white; font-weight:600; text-decoration:none; border-radius:30px; box-shadow:0 4px 15px rgba(123, 47, 247, 0.4); transition:all 0.3s ease-in-out; font-size:1rem; margin-left:10px;">
+📄 View Certificate
+</a>
+</div>
+
+  
+     <!-- Internship 3 -->
+<div class="internship-card">
+  <span class="status ongoing">⏳ Ongoing</span>
+  <h3>Mistral Solutions</h3>
+  <p>Currently developing a Smart Indoor Parking System using CVIP and AR/VR technologies. The system detects and counts empty parking slots from CCTV images and guides users to the nearest available slot through AR-based navigation.</p>
+  <p>Technologies involved include Computer Vision, OpenCV, Python, and Unity for AR integration.</p>
+  <!-- Certificate and demo will be added upon completion -->
+  <a href="images/video.mp4" 
+  target="_blank" 
+  style="display:inline-block; padding:10px 20px; background:linear-gradient(135deg, #ff512f, #dd2476); color:white; font-weight:600; text-decoration:none; border-radius:30px; box-shadow:0 4px 15px rgba(221, 36, 118, 0.4); transition:all 0.3s ease-in-out; font-size:1rem;">
+  🎥 Watch Demo
+</a>
+</div>
+
+    </div>
+  </section>
+  <section id="projects">
+    <div class="container">
+      <h1 class="sub-title">My Projects</h1>
+  
+      <div class="project-slider">
+        <!-- Slide 1 -->
+        <div class="project-card">
+          <img class="project-img" src="images/pro1.png" alt="Project 1">
+          <div class="project-content">
+            <p class="project-description">
+              This is a College Recommendation Web Application designed to help students find the best-suited engineering colleges based on their entrance exam scores. The system utilizes a smart recommendation engine, chatbot support, and interactive UI to enhance the user experience.
+            </p>
+            <div class="project-links">
+              <a href="images/rec.mp4" target="_blank"><i class="fa-solid fa-play"></i> Watch Demo</a>
+              <a href="https://github.com/Jaishree935/Smart-College-Admission-Recommendation-System/tree/main" target="_blank"><i class="fa-solid fa-code"></i> Source Code</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Slide 2 -->
+        <div class="project-card">
+          <img class="project-img" src="images/project2.png" alt="Project 2">
+          <p class="project-description">
+            A web-based tool that summarizes long texts using extractive summarization. Built with JSP and NLP libraries like OpenNLP, it uses TF-IDF to select key sentences. Users can upload text or documents to get meaningful summaries. Ideal for journalism, research, and education needs.
+          </p>
+          <div class="project-links">
+            <a href="images/pro2.mp4" target="_blank"><i class="fa-solid fa-play"></i> Watch Demo</a>
+            <a href="https://github.com/Jaishree935/Text-Summarization-Tool-using-JSP-and-NLP-Algorithm" target="_blank"><i class="fa-solid fa-code"></i> Source Code</a>
+          </div>
+        </div>
+  
+        <!-- Slide 3 -->
+        <div class="project-card">
+          <img class="project-img" src="images/pro3.png" alt="Project 3">
+          <p class="project-description">
+            Developed a real-time object detection and counting system using YOLOv5. Built with PyTorch, Pillow, Matplotlib, and Ipywidgets for seamless image processing. Users can upload images and get accurate object counts with bounding boxes.
+          </p>
+          <div class="project-links">
+            <a href="images/pro3.mp4" target="_blank"><i class="fa-solid fa-play"></i> Watch Demo</a>
+            <a href="https://github.com/Jaishree935/CartQuantity-using-Computer-Vision-and-Image-Processing" target="_blank"><i class="fa-solid fa-code"></i> Source Code</a>
+          </div>
+        </div>
+  
+        <!-- Slide 4 (Add more projects like this) -->
+        <div class="project-card">
+          <img class="project-img" src="images/pro4.png" alt="Project 4">
+          <p class="project-description">
+            A heart health chatbot powered by BioMistral LLM that uses NLP to answer user queries about heart disease, risk factors, prevention, and general heart wellness.
+          </p>
+          <div class="project-links">
+            <a href="images/pro4.mp4" target="_blank"><i class="fa-solid fa-play"></i> Watch Demo</a>
+            <a href="https://github.com/Jaishree935/Build-BioMisteral-Medical-RAG-chatbot-for-HEART" target="_blank"><i class="fa-solid fa-code"></i> Source Code</a>
+          </div>
+        </div>
+  
+        <!-- Slide 5 -->
+        <div class="project-card">
+          <img class="project-img" src="images/Pro5.png" alt="Project 5">
+          <p class="project-description">
+            I have developed an interactive Power BI dashboard utilizing a one-year pizza sales dataset. Created three detailed pizza report dashboards and integrated them for seamless data analysis. Enhanced data insights and visualization  
+          </p>
+          <div class="project-links">
+            <a href="images/pro5.mp4" target="_blank"><i class="fa-solid fa-play"></i> Watch Demo</a>
+            
+          </div>
+        </div>
+  
+        <!-- Slide 6 -->
+        <div class="project-card">
+          <img class="project-img" src="images/pro6.png" alt="Project 6">
+          <p class="project-description">
+            The University Dormitory Management System efficiently handles the organization of student information for both local and international residents. It simplifies dormitory allocation and student record management, ensuring smooth administrative operations.  
+         
+          </p>
+          <div class="project-links">
+          
+            <a href="https://github.com/Jaishree935/University-Dormitory-Management-System-Using-Java" target="_blank"><i class="fa-solid fa-code"></i> Source Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CONTACT SECTION -->
+<section id="contact" class="py-5 bg-dark text-white">
+  <div class="container">
+    <h2 class="text-center mb-5 sub-title">Contact Me</h2>
+    <div class="row">
+      <!-- Left -->
+      <div class="col-md-5 mb-4">
+        <p><i class="fas fa-paper-plane me-2 text-pink"></i> jaishreerajendran2005@gmail.com</p>
+        <p><i class="fas fa-phone-alt me-2 text-pink"></i> 8778621441</p>
+
+        <!-- Social icons -->
+        <div class="social-icons">
+          <!-- LeetCode -->
+          <a href="https://leetcode.com/u/Jaishree_45/" target="_blank">
+            <img src="https://cdn.iconscout.com/icon/free/png-256/leetcode-3521542-2944960.png" alt="LeetCode" />
+          </a>
+        
+          <!-- GitHub -->
+          <a href="https://github.com/Jaishree935?tab=repositories" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" />
+          </a>
+        
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/jaishreecse/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
+          </a>
+        </div>
+        
+
+        <!-- Download CV -->
+        <a href="Resume.pdf" download class="btn btn-pink mt-3">Download CV</a>
+      </div>
+
+      <!-- Right -->
+      <div class="col-md-7">
+        <form id="contact-form">
+          <input type="text" name="user_name" class="form-control mb-3" placeholder="Your Name" required>
+          <input type="email" name="user_email" class="form-control mb-3" placeholder="Your Email" required>
+          <textarea name="message" class="form-control mb-3" placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit" class="btn btn-pink">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-3 bg-black text-white">
+  <p class="mb-0">Copyright @ Jaishree. Made with <span class="text-pink">❤️</span> by Own Way</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
