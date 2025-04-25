@@ -7,13 +7,13 @@
 
 🚀 Features
 
-    - 🔮 **Stylish Purple-Themed Design**
-    - 🧠 **About Me Section** – Brief intro with education, experience, and achievements
-    - 📚 **Projects Showcase** – Interactive card slider with videos and source code links
-    - 📩 **Contact Form** – Integrated with EmailJS to send messages directly to my inbox
-    - 👨‍💻 **Resume Download** – One-click CV download button
-    - 🌐 **Social Icons** – LinkedIn, GitHub, and LeetCode profiles with stylish icons
-    - 💬 **Fully Responsive** – Optimized for all screen sizes
+    - 🔮 Stylish Purple-Themed Design
+    - 🧠 About Me Section – Brief intro with education, experience, and achievements
+    - 📚 Projects Showcase – Interactive card slider with videos and source code links
+    - 📩 Contact Form – Integrated with EmailJS to send messages directly to my inbox
+    - 👨‍💻 Resume Download – One-click CV download button
+    - 🌐 Social Icons – LinkedIn, GitHub, and LeetCode profiles with stylish icons
+    - 💬 Fully Responsive – Optimized for all screen sizes
 
 🛠️ Technologies Used
 
