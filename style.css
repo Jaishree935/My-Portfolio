@@ -718,3 +718,20 @@ body.dark-theme #certifications {
   background-color: #121212 !important;
 }
 
+.certificate-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 20px;
+  width: 160px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px rgba(255, 183, 3, 0.6);
+}
+
+body.dark-theme .certificate-card {
+  background: rgba(255, 255, 255, 0.05);
+}
+
