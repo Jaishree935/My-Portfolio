@@ -707,3 +707,14 @@ a img:hover {
   filter: brightness(1.3);
 }
 
+/* === Certifications Section Theme Fix === */
+#certifications {
+  background-color: transparent !important;
+}
+body.purple-theme #certifications {
+  background-color: #f3e8ff !important;
+}
+body.dark-theme #certifications {
+  background-color: #121212 !important;
+}
+
