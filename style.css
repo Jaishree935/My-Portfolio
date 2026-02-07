@@ -690,12 +690,25 @@ a img:hover {
   filter: brightness(1.3);
 }
 
-.certification-section {
-  background: linear-gradient(135deg, #300066, #5e00a2); /* New stylish gradient */
+/* ================= CERTIFICATIONS THEME FIX ================= */
+
+#certifications {
   padding: 80px 20px;
-  color: white;
   text-align: center;
 }
+
+/* Purple Theme */
+body.purple-theme #certifications {
+  background: linear-gradient(135deg, #300066, #5e00a2);
+  color: white;
+}
+
+/* Dark Theme */
+body.dark-theme #certifications {
+  background: #0f0f1a;
+  color: #fff;
+}
+
 
 .certificate-container {
   display: flex;
@@ -735,3 +748,4 @@ a img:hover {
   font-size: 1.1rem;
   margin-top: 10px;
 }
+
